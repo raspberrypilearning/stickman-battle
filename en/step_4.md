@@ -4,23 +4,41 @@ Right now the fighter freezes on the last frame of whatever move it just did. Re
 
 > [!TASK]
 >
-> Build the idle. It plays the four `idle` frames over and over until the player presses a key, so the fighter breathes while it waits.
+> Start a new script on the `player`{:class="block3looks"} sprite. When it receives the `fight`{:class="block3events"} message, it should keep looping until the player presses a key. Build the empty loop first.
 >
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > when I receive (fight v)
 > repeat until <key (any v) pressed?>
-> switch costume to (idle_01 v)
-> wait (0.01) seconds
-> switch costume to (idle_02 v)
-> wait (0.01) seconds
-> switch costume to (idle_03 v)
-> wait (0.01) seconds
-> switch costume to (idle_04 v)
-> wait (0.02) seconds
 > end
 > ```
+
+> [!TIP]
+>
+> A `repeat until`{:class="block3control"} loop runs the blocks inside it over and over until its condition becomes true. Here it stops the instant the player presses any key, so the fighter only idles while it's waiting for the next move.
+
+> [!TASK]
+>
+> Now fill the loop. Cycle the four `idle` frames with a short wait after each, so the fighter bobs on the spot.
+>
+> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+>
+> ```blocks3
+> when I receive (fight v)
+> repeat until <key (any v) pressed?>
+> +switch costume to (idle_01 v)
+> +wait (0.01) seconds
+> +switch costume to (idle_02 v)
+> +wait (0.01) seconds
+> +switch costume to (idle_03 v)
+> +wait (0.01) seconds
+> +switch costume to (idle_04 v)
+> +wait (0.02) seconds
+> end
+> ```
+
+You won't see the idle run yet — nothing sends the `fight`{:class="block3events"} message. That's what you'll fix next.
 
 > [!TIP]
 >
@@ -28,25 +46,12 @@ Right now the fighter freezes on the last frame of whatever move it just did. Re
 
 > [!TASK]
 >
-> Make each move end by sending the `fight`{:class="block3events"} message. Add `broadcast (fight v)`{:class="block3events"} as the very last block of `punch`{:class="block3custom"}.
+> Make the punch hand back to the idle when it finishes. Add `broadcast (fight v)`{:class="block3events"} as the very last block of `punch`{:class="block3custom"}.
 >
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
 > ```blocks3
 > define punch
-> start sound (Tennis Hit v)
-> switch costume to (punch_01 v)
-> wait (0.01) seconds
-> switch costume to (punch_02 v)
-> wait (0.01) seconds
-> switch costume to (punch_03 v)
-> wait (0.01) seconds
-> switch costume to (punch_04 v)
-> wait (0.01) seconds
-> switch costume to (punch_05 v)
-> wait (0.01) seconds
-> switch costume to (punch_06 v)
-> wait (0.01) seconds
 > switch costume to (punch_02 v)
 > wait (0.01) seconds
 > switch costume to (punch_01 v)
@@ -54,8 +59,10 @@ Right now the fighter freezes on the last frame of whatever move it just did. Re
 > +broadcast (fight v)
 > ```
 
+**Test:** Click the green flag and press `space`{:class="block3sensing"}. The fighter punches, then bobs in an idle stance until you press another key.
+
 > [!TASK]
 >
-> Add the same `broadcast (fight v)`{:class="block3events"} block to the end of `kick`{:class="block3custom"}, `sword`{:class="block3custom"}, `jump`{:class="block3custom"}, and `roll`{:class="block3custom"} too.
+> Add the same `broadcast (fight v)`{:class="block3events"} block to the very end of `kick`{:class="block3custom"}, `sword`{:class="block3custom"}, `jump`{:class="block3custom"}, and `roll`{:class="block3custom"} too.
 
-**Test:** Click the green flag and press `space`{:class="block3sensing"}. The fighter punches, then bobs in an idle stance until you press another key.
+**Test:** Press each attack key in turn. After every move, your fighter should settle back into the idle bob instead of freezing.

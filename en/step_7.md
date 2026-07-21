@@ -37,7 +37,7 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 
 > [!TASK]
 >
-> Make the enemy spawn from a random side, over and over, while the game is playing. Add this to the enemy sprite.
+> Build the spawning loop on the enemy sprite. When it receives the `dino`{:class="block3events"} message, it should keep picking a random side — `1` or `2` — once a second while the game is playing.
 >
 > <p align="center"><img src="images/enemy.png" alt="Enemy sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
@@ -45,7 +45,21 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 > when I receive (dino v)
 > repeat until <(playing) = (0)>
 > set [side v] to (pick random (1) to (2))
-> if <(side) = (1)> then
+> wait (1) seconds
+> end
+> ```
+
+> [!TASK]
+>
+> Now make it spawn a clone on the side it picked: move to the left edge for side `1`, the right edge for side `2`, and `create clone of (myself v)`{:class="block3control"} each time.
+>
+> <p align="center"><img src="images/enemy.png" alt="Enemy sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+>
+> ```blocks3
+> when I receive (dino v)
+> repeat until <(playing) = (0)>
+> set [side v] to (pick random (1) to (2))
+> +if <(side) = (1)> then
 > go to x: (-280) y: (0)
 > create clone of (myself v)
 > else

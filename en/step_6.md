@@ -29,7 +29,7 @@ A fighter that can't move is an easy target. You'll let the player walk with the
 
 > [!TASK]
 >
-> Add the matching `left arrow`{:class="block3sensing"} script. It's the same, but it faces the fighter the other way with `point in direction (-90)`{:class="block3motion"} and walks the other way with `change x by (-2)`{:class="block3motion"}.
+> The left arrow is a mirror image, so don't build it again. Right-click your `right arrow`{:class="block3sensing"} script and choose **Duplicate**. On the copy, change the key to `left arrow`{:class="block3sensing"}, flip the facing to `point in direction (-90)`{:class="block3motion"}, and change every `change x by (2)`{:class="block3motion"} to `change x by (-2)`{:class="block3motion"}.
 >
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >

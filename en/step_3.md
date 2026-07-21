@@ -4,11 +4,19 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 
 > [!TASK]
 >
-> Make a new custom block called `kick`{:class="block3custom"} (**My Blocks** → **Make a Block**).
+> Make a new custom block called `kick`{:class="block3custom"}. In the **My Blocks** palette, click **Make a Block**.
+>
+> ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
+>
+> Name it `kick`{:class="block3custom"} and click **OK**, so a `define kick`{:class="block3custom"} hat appears.
+>
+> ![Naming the new block in the Make a Block dialog.](images/define-block.png)
 
 > [!TASK]
 >
 > Instead of building the kick from scratch, copy the punch. Right-click the first block under `define punch`{:class="block3custom"} and choose **Duplicate**, then drop the copied stack under `define kick`{:class="block3custom"}.
+>
+> ![Right-clicking the first block under define punch and choosing Duplicate.](images/duplicate-punch.png)
 
 > [!TIP]
 >
@@ -159,5 +167,9 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 > when [v v] key pressed
 > roll :: custom
 > ```
+
+> [!TIP]
+>
+> The roll is your fighter's escape move, so make it feel right. Try changing every `move (5) steps`{:class="block3motion"} in `roll`{:class="block3custom"} to a bigger number for a long, fast dash, or a smaller one for a short hop. Keep the five `move`{:class="block3motion"} blocks the same as each other so the roll travels smoothly, and test until the distance feels good.
 
 **Test:** Try every key — `space`{:class="block3sensing"}, `m`{:class="block3sensing"}, `n`{:class="block3sensing"}, `up arrow`{:class="block3sensing"}, and `v`{:class="block3sensing"}. Each one should play its own move.

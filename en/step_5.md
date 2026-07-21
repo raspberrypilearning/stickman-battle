@@ -1,6 +1,6 @@
 ## Start the game
 
-At the moment your moves work, but the fighter has no proper start. You'll add a green flag script that sets the fighter up, plays a short intro, then switches the game on.
+At the moment your moves work, but the fighter has no proper start. You'll add a green flag script that sets the fighter up, plays a short intro, then switches the game on — one piece at a time.
 
 > [!TASK]
 >
@@ -14,7 +14,7 @@ At the moment your moves work, but the fighter has no proper start. You'll add a
 
 > [!TASK]
 >
-> Add this green flag script to the `player`{:class="block3looks"} sprite. It faces the fighter the right way, sizes it up, plays a short intro, then sets `playing`{:class="block3variables"} to `1` and starts the idle.
+> On the `player`{:class="block3looks"} sprite, start a green flag script that sets the fighter up: a starting costume, in front of everything, in the middle, facing left, at a good size.
 >
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
@@ -26,16 +26,39 @@ At the moment your moves work, but the fighter has no proper start. You'll add a
 > set rotation style [left-right v]
 > point in direction (-90)
 > set size to (250) %
-> wait (1) seconds
-> say [GOJIRA!!!!] for (2) seconds
-> say [I will punch you into the shadow realm!] for (1.5) seconds
-> set [playing v] to (1)
-> broadcast (fight v)
 > ```
 
 > [!TIP]
 >
 > `set rotation style [left-right v]`{:class="block3motion"} means the sprite only ever flips to face left or right, instead of spinning all the way round when it turns. It's the natural setting for a side-on fighter.
+
+> [!TASK]
+>
+> Add a short intro to the end of that script: a pause, then two lines your fighter shouts before the fight.
+>
+> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+>
+> ```blocks3
+> when green flag clicked
+> point in direction (-90)
+> set size to (250) %
+> +wait (1) seconds
+> +say [GOJIRA!!!!] for (2) seconds
+> +say [I will punch you into the shadow realm!] for (1.5) seconds
+> ```
+
+> [!TASK]
+>
+> Finally, switch the game on. At the very end, set `playing`{:class="block3variables"} to `1` and start the idle bob with the `fight`{:class="block3events"} message.
+>
+> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+>
+> ```blocks3
+> when green flag clicked
+> say [I will punch you into the shadow realm!] for (1.5) seconds
+> +set [playing v] to (1)
+> +broadcast (fight v)
+> ```
 
 > [!TASK]
 >
