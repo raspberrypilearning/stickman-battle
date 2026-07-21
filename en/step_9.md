@@ -5,6 +5,10 @@ Your game works — now reward the player for surviving, and choose when your ba
 > [!TASK]
 >
 > Make two variables and **tick** both: `score`{:class="block3variables"} (how long the player has lasted) and `high score`{:class="block3variables"} (their best ever).
+>
+> ![The score variable ticked in the Variables palette.](images/variable-score.png)
+>
+> ![The high score variable ticked in the Variables palette.](images/variable-highscore.png)
 
 > [!TASK]
 >

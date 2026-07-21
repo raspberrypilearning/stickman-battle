@@ -7,6 +7,8 @@ At the moment your moves work, but the fighter has no proper start. You'll add a
 > Make a variable called `playing`{:class="block3variables"}. It's just for the code, so **untick** it to keep it off the stage. You'll use it to remember whether a round is running.
 >
 > ![The Make a Variable button in the Variables palette.](images/make-a-variable.png)
+>
+> ![The playing variable unticked in the Variables palette.](images/variable-playing.png)
 
 > [!TIP]
 >

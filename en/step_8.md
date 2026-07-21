@@ -6,7 +6,7 @@ Now for the actual fight. You'll make enemies hurt your fighter when they reach 
 >
 > Make a variable called `health`{:class="block3variables"} and **tick** it so the player can see it on the stage.
 >
-> ![A ticked variable checkbox showing the value on the stage.](images/variable-checkbox.png)
+> ![The health variable ticked in the Variables palette.](images/variable-health.png)
 
 > [!TASK]
 >

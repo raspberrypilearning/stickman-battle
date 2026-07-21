@@ -22,6 +22,8 @@ Your game runs at one speed. Real games let the danger build. Can you add a **di
 > [!HINT]
 >
 > Want the player to choose? If you **tick** the `difficulty`{:class="block3variables"} variable, then right-click it on the stage, you can turn it into a **slider** they drag before they start.
+>
+> ![The difficulty variable ticked in the Variables palette.](images/variable-difficulty.png)
 
 > [!TIP]
 >

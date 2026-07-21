@@ -10,13 +10,9 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 
 > [!TASK]
 >
-> If your starter already has an enemy you don't want, delete it with the bin icon on its thumbnail.
+> Make a variable called `side`{:class="block3variables"} (which side an enemy comes from). **Untick** it — the player doesn't need to see it.
 >
-> ![Deleting a sprite with the bin icon on its thumbnail.](images/delete-sprite.png)
-
-> [!TASK]
->
-> Make two variables the enemy needs: `playing`{:class="block3variables"} already exists, so add `side`{:class="block3variables"} (which side an enemy comes from). **Untick** it — the player doesn't need to see it.
+> ![The side variable unticked in the Variables palette.](images/variable-side.png)
 
 > [!TASK]
 >
