@@ -51,7 +51,7 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 >
 > ```blocks3
 > when [m v] key pressed
-> kick
+> kick :: custom
 > ```
 
 **Test:** Press `m`{:class="block3sensing"}. Your fighter kicks. Fix any frame that looks out of order before moving on.
@@ -89,7 +89,7 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 >
 > ```blocks3
 > when [n v] key pressed
-> sword
+> sword :: custom
 > ```
 
 **Test:** Press `n`{:class="block3sensing"}. Your fighter swings the sword.
@@ -123,7 +123,7 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 >
 > ```blocks3
 > when [up arrow v] key pressed
-> jump
+> jump :: custom
 > ```
 
 > [!TASK]
@@ -157,7 +157,7 @@ Your fighter needs more than a punch. A kick, a sword slash, a jump, and a dash 
 >
 > ```blocks3
 > when [v v] key pressed
-> roll
+> roll :: custom
 > ```
 
 **Test:** Try every key — `space`{:class="block3sensing"}, `m`{:class="block3sensing"}, `n`{:class="block3sensing"}, `up arrow`{:class="block3sensing"}, and `v`{:class="block3sensing"}. Each one should play its own move.

@@ -77,7 +77,7 @@ Now for the actual fight. An enemy that reaches your fighter should hurt it — 
 >
 > ```blocks3
 > when I receive (hurt v)
-> hurt
+> hurt :: custom
 > ```
 
 > [!TASK]
@@ -112,7 +112,7 @@ Now for the actual fight. An enemy that reaches your fighter should hurt it — 
 > set [health v] to (20)
 > wait until <(health) < (1)>
 > set [playing v] to (0)
-> death
+> death :: custom
 > ```
 
 > [!TIP]

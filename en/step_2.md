@@ -73,7 +73,7 @@ Your fighter already has all its frames drawn as costumes. In this step you'll t
 >
 > ```blocks3
 > when [space v] key pressed
-> punch
+> punch :: custom
 > ```
 
 **Test:** Click the green flag, then press the `space`{:class="block3sensing"} key. Your fighter throws a punch and settles back to a resting pose.

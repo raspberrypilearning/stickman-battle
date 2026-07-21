@@ -63,7 +63,7 @@ A fighter that can't move is an easy target. You'll let the player walk with the
 > ```blocks3
 > when [space v] key pressed
 > +if <(playing) = (1)> then
-> punch
+> punch :: custom
 > end
 > ```
 
