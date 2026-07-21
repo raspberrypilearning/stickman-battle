@@ -1,0 +1,4 @@
+name: "Stickman Battle completed"
+identifier: "stickman-battle-complete"
+type: 'python'
+build: false

@@ -1,14 +1,25 @@
-title: Project title in sentence case
+title: Stickman battle
 hero_image: images/banner.png
-description: A short description of the project
+description: Make a side-on fighting game where a stickman hero battles waves of enemies, then turn it into a two-player fight.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Animate a punch
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: Add the other moves
+  - title: Return to a ready stance
+  - title: Start the game
+  - title: Move left and right
+  - title: Add an enemy
+  - title: Land hits and take damage
+  - title: Keep score and set the scene
+    completion:
+      - internal
+  - title: 'Challenge: make it harder'
+    challenge: true
+  - title: 'Challenge: a two-player battle'
     challenge: true
     completion:
       - external
