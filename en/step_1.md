@@ -27,4 +27,3 @@ The fighter is only dangerous **mid-strike**: as a punch, kick, or slash lands, 
 
 > [!NOPRINT]
 >
-> Open the starter project to begin: [Stickman Battle starter](https://scratch.mit.edu/projects/1363542597/editor).
