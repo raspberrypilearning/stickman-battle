@@ -58,10 +58,10 @@ Now for the actual fight. You'll make enemies hurt your fighter when they reach 
 > move (2) steps
 > next costume
 > +if <touching (player v)?> then
-> start sound (Bite v)
-> broadcast (hurt v)
-> change [health v] by (-1)
-> delete this clone
+> +start sound (Bite v)
+> +broadcast (hurt v)
+> +change [health v] by (-1)
+> +delete this clone
 > end
 > end
 > delete this clone
@@ -84,12 +84,12 @@ Now for the actual fight. You'll make enemies hurt your fighter when they reach 
 > next costume
 > if <touching (player v)?> then
 > +if <touching color [#ffe500]?> then
-> start sound (Boing v)
-> turn right (180) degrees
-> repeat (20)
-> move (20) steps
+> +start sound (Boing v)
+> +turn right (180) degrees
+> +repeat (20)
+> +move (20) steps
 > end
-> delete this clone
+> +delete this clone
 > else
 > start sound (Bite v)
 > broadcast (hurt v)

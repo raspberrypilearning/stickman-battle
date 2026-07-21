@@ -56,11 +56,11 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 > repeat until <(playing) = (0)>
 > set [side v] to (pick random (1) to (2))
 > +if <(side) = (1)> then
-> go to x: (-280) y: (0)
-> create clone of (myself v)
+> +go to x: (-280) y: (0)
+> +create clone of (myself v)
 > else
-> go to x: (280) y: (0)
-> create clone of (myself v)
+> +go to x: (280) y: (0)
+> +create clone of (myself v)
 > end
 > wait (1) seconds
 > end
