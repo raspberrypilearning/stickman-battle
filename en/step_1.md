@@ -1,6 +1,6 @@
 ## What you will make
 
-You'll make a side-on fighting game where a stickman hero takes on a giant, city-stomping dinosaur in the middle of Tokyo. The player moves the fighter left and right and throws punches, kicks, and sword slashes to knock the dinosaur back — before it bites away all of the fighter's health.
+You'll make a side-on fighting game where a stickman hero takes on giant, city-stomping dinosaurs in the middle of Tokyo. The player moves the fighter left and right and throws punches, kicks, and sword slashes to knock the dinosaurs back — before they bite away all of the fighter's health.
 
 > [!NOPRINT]
 >
@@ -23,7 +23,7 @@ The player controls the fighter with the keyboard:
 - `v`{:class="block3sensing"} — dash roll
 - `up arrow`{:class="block3sensing"} — jump
 
-The fighter is only dangerous **mid-strike**: as a punch, kick, or slash lands, the fists and weapon flash a bright colour. If the dinosaur runs into that colour it gets knocked back and destroyed. If it reaches the fighter at any other time, it bites, and the fighter loses health.
+The fighter is only dangerous **mid-strike**: as a punch, kick, or slash lands, the fists, foot and weapon flash a bright colour. If the dinosaur runs into that colour it gets knocked back and destroyed. If it reaches the fighter at any other time, it bites, and the fighter loses health.
 
 > [!NOPRINT]
 >
