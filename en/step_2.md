@@ -18,7 +18,17 @@ Your fighter already has all its frames drawn as costumes. In this step you'll t
 
 > [!TASK]
 >
-> You'll build the punch as its own block you can reuse. In the **My Blocks** palette, click **Make a Block**, name it `punch`{:class="block3custom"}, and click **OK**. A `define punch`{:class="block3custom"} hat appears for you to build on.
+> You'll build the punch as its own block you can reuse. In the **My Blocks** palette, click **Make a Block**.
+>
+> ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
+>
+> Name it `punch`{:class="block3custom"} and click **OK**.
+>
+> ![Naming the new block "punch" in the Make a Block dialog.](images/define-punch.png)
+>
+> A `define punch`{:class="block3custom"} hat appears for you to build on.
+>
+> ![The define punch hat block in the code area.](images/punch-block.png)
 
 > [!TIP]
 >
