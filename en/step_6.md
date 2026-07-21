@@ -27,6 +27,10 @@ A fighter that can't move is an easy target. You'll let the player walk with the
 > end
 > ```
 
+> [!TIP]
+>
+> The `if <(playing) = (1)>`{:class="block3control"} block is a gatekeeper. Everything you put inside it only runs when `playing`{:class="block3variables"} equals `1` — that is, once the intro is over and the round has actually started. Press the arrow key before then and the check is false, so the blocks inside are skipped and the fighter stays put.
+
 > [!TASK]
 >
 > The left arrow is a mirror image, so don't build it again. Right-click your `right arrow`{:class="block3sensing"} script and choose **Duplicate**. On the copy, change the key to `left arrow`{:class="block3sensing"}, flip the facing to `point in direction (-90)`{:class="block3motion"}, and change every `change x by (2)`{:class="block3motion"} to `change x by (-2)`{:class="block3motion"}.

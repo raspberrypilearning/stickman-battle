@@ -78,6 +78,15 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 >
 > ```blocks3
 > when green flag clicked
+> switch costume to (walk_02 v)
+> go to [front v] layer
+> go to x: (0) y: (0)
+> set rotation style [left-right v]
+> point in direction (-90)
+> set size to (250) %
+> wait (1) seconds
+> say [GOJIRA!!!!] for (2) seconds
+> say [I will punch you into the shadow realm!] for (1.5) seconds
 > set [playing v] to (1)
 > broadcast (fight v)
 > +broadcast (dino v)

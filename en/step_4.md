@@ -52,6 +52,19 @@ You won't see the idle run yet — nothing sends the `fight`{:class="block3event
 >
 > ```blocks3
 > define punch
+> start sound (Tennis Hit v)
+> switch costume to (punch_01 v)
+> wait (0.01) seconds
+> switch costume to (punch_02 v)
+> wait (0.01) seconds
+> switch costume to (punch_03 v)
+> wait (0.01) seconds
+> switch costume to (punch_04 v)
+> wait (0.01) seconds
+> switch costume to (punch_05 v)
+> wait (0.01) seconds
+> switch costume to (punch_06 v)
+> wait (0.01) seconds
 > switch costume to (punch_02 v)
 > wait (0.01) seconds
 > switch costume to (punch_01 v)
