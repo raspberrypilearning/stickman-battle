@@ -29,7 +29,7 @@ Now for the actual fight. You'll make enemies hurt your fighter when they reach 
 
 > [!TASK]
 >
-> Run that block whenever the `hurt`{:class="block3events"} message arrives.
+> Run that block whenever the `hurt`{:class="block3events"} message arrives. This is a new message too — make it from the `when I receive`{:class="block3events"} dropdown with **New message**, named `hurt`{:class="block3events"}.
 >
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >

@@ -35,6 +35,8 @@ Time to give your fighter something to fight. You'll add an enemy that keeps app
 >
 > Build the spawning loop on the enemy sprite. When it receives the `dino`{:class="block3events"} message, it should keep picking a random side — `1` or `2` — once a second while the game is playing.
 >
+> This is a new message. In the `when I receive`{:class="block3events"} block's dropdown, choose **New message** and name it `dino`{:class="block3events"}.
+>
 > <p align="center"><img src="images/enemy.png" alt="Enemy sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
 > ```blocks3

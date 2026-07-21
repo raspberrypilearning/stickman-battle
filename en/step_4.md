@@ -6,6 +6,8 @@ Right now the fighter freezes on the last frame of whatever move it just did. Re
 >
 > Start a new script on the `player`{:class="block3looks"} sprite. When it receives the `fight`{:class="block3events"} message, it should keep looping until the player presses a key. Build the empty loop first.
 >
+> This message doesn't exist yet. In the `when I receive`{:class="block3events"} block's dropdown, choose **New message** and name it `fight`{:class="block3events"}.
+>
 > <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
 >
 > ```blocks3
