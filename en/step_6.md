@@ -1,82 +1,69 @@
-## Move left and right
+## Start the game
 
-A fighter that can't move is an easy target. You'll let the player walk with the arrow keys, and make sure no move works until the game has actually started.
-
-> [!TASK]
->
-> Add a script so the `right arrow`{:class="block3sensing"} turns the fighter to face right and walks it across the stage, cycling the idle frames so its legs move.
->
-> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
->
-> ```blocks3
-> when [right arrow v] key pressed
-> if <(playing) = (1)> then
-> point in direction (90)
-> switch costume to (idle_01 v)
-> change x by (2)
-> wait (0.01) seconds
-> switch costume to (idle_02 v)
-> change x by (2)
-> wait (0.01) seconds
-> switch costume to (idle_03 v)
-> change x by (2)
-> wait (0.01) seconds
-> switch costume to (idle_04 v)
-> change x by (2)
-> broadcast (fight v)
-> end
-> ```
-
-> [!TIP]
->
-> The `if <(playing) = (1)>`{:class="block3control"} block is a gatekeeper. Everything you put inside it only runs when `playing`{:class="block3variables"} equals `1` — that is, once the intro is over and the round has actually started. Press the arrow key before then and the check is false, so the blocks inside are skipped and the fighter stays put.
+Add a green flag script that sets up the fighter, plays a short intro, and starts the game.
 
 > [!TASK]
 >
-> The left arrow is a mirror image, so don't build it again. Right-click your `right arrow`{:class="block3sensing"} script and choose **Duplicate**. On the copy, change the key to `left arrow`{:class="block3sensing"}, flip the facing to `point in direction (-90)`{:class="block3motion"}, and change every `change x by (2)`{:class="block3motion"} to `change x by (-2)`{:class="block3motion"}.
+> Make a variable called `playing`{:class="block3variables"}. **Untick** it so it does not appear on the stage. It will remember whether the game is running.
 >
-> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+> ![The Make a Variable button in the Variables palette.](images/make-a-variable.png)
+>
+> ![The playing variable unticked in the Variables palette.](images/variable-playing.png)
+
+> [!TASK]
+>
+> On the **player** sprite, add a `when green flag clicked`{:class="block3events"} block and the blocks below. They set the fighter's starting costume, layer, position, direction, and size.
 >
 > ```blocks3
-> when [left arrow v] key pressed
-> if <(playing) = (1)> then
+> when green flag clicked
+> switch costume to (walk_02 v)
+> go to [front v] layer
+> go to x: (0) y: (0)
+> set rotation style [left-right v]
 > point in direction (-90)
-> switch costume to (idle_01 v)
-> change x by (-2)
-> wait (0.01) seconds
-> switch costume to (idle_02 v)
-> change x by (-2)
-> wait (0.01) seconds
-> switch costume to (idle_03 v)
-> change x by (-2)
-> wait (0.01) seconds
-> switch costume to (idle_04 v)
-> change x by (-2)
-> broadcast (fight v)
-> end
+> set size to (250) %
 > ```
 
-**Test:** Click the green flag, wait for the intro, then hold the arrow keys. Your fighter walks left and right and faces the way it's going.
+`set rotation style left-right`{:class="block3motion"} lets the sprite face left or right without turning upside down.
 
 > [!TASK]
 >
-> Your attacks should only work once the game is running, too. Wrap the `punch`{:class="block3custom"} block in a check so it only fires while `playing`{:class="block3variables"} is `1`.
->
-> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+> Add a short pause and two lines for your fighter to shout.
 >
 > ```blocks3
-> when [space v] key pressed
-> +if <(playing) = (1)> then
-> punch :: custom
-> end
+> when green flag clicked
+> switch costume to (walk_02 v)
+> go to [front v] layer
+> go to x: (0) y: (0)
+> set rotation style [left-right v]
+> point in direction (-90)
+> set size to (250) %
+> +wait (1) seconds
+> +say [GOJIRA!!!!] for (2) seconds
+> +say [I will punch you into the shadow realm!] for (1.5) seconds
 > ```
 
 > [!TASK]
 >
-> Do the same for the `m`{:class="block3sensing"}, `n`{:class="block3sensing"}, `up arrow`{:class="block3sensing"}, and `v`{:class="block3sensing"} key scripts, so `kick`{:class="block3custom"}, `sword`{:class="block3custom"}, `jump`{:class="block3custom"}, and `roll`{:class="block3custom"} are all guarded.
-
-> [!TIP]
+> At the end of the script, set `playing`{:class="block3variables"} to `1` and broadcast `ready`{:class="block3events"} to start the idle animation.
 >
-> Checking the game state before acting on a key press is called **guarding input**. It stops the player attacking during the intro or after the game is over, when those moves shouldn't do anything.
+> ```blocks3
+> when green flag clicked
+> switch costume to (walk_02 v)
+> go to [front v] layer
+> go to x: (0) y: (0)
+> set rotation style [left-right v]
+> point in direction (-90)
+> set size to (250) %
+> wait (1) seconds
+> say [GOJIRA!!!!] for (2) seconds
+> say [I will punch you into the shadow realm!] for (1.5) seconds
+> +set [playing v] to (1)
+> +broadcast (ready v)
+> ```
 
-**Test:** Before you press the green flag, tap the keys — nothing should happen. After the intro, every move and both walks should work.
+> [!TASK]
+>
+> Personalise the two `say`{:class="block3looks"} lines. Change `set size to`{:class="block3looks"} if your fighter looks too big or too small.
+
+**Test:** Click the green flag. Your fighter faces left, sizes up, delivers its lines, then settles into the idle bob.

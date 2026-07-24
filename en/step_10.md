@@ -1,30 +1,62 @@
-## Challenge: make it harder
+## Keep score and set the scene
 
-Your game runs at one speed. Real games let the danger build. Can you add a **difficulty** setting that controls how often enemies appear?
+Add a score, save the highest score, and choose a backdrop.
 
-> [!CHALLENGE]
+> [!TASK]
 >
-> + Can you make a `difficulty`{:class="block3variables"} variable that decides how quickly new enemies spawn?
-> + Can you let the player change the difficulty and feel the game get harder?
+> Make two variables and **tick** both so they appear on the stage:
+>
+> - `score`{:class="block3variables"} — how long the player has lasted
+> - `high score`{:class="block3variables"} — the best score in this play session
+>
+> ![The score variable ticked in the Variables palette.](images/variable-score.png)
+>
+> ![The high score variable ticked in the Variables palette.](images/variable-highscore.png)
 
-> [!HINT]
+> [!TASK]
 >
-> Right now your enemy spawner waits a fixed `1` second between clones. If you divide that wait by a `difficulty`{:class="block3variables"} variable, a bigger number means a shorter wait — so enemies come thick and fast.
+> Select the **Stage** and reset the score when the green flag is clicked.
 >
-> <p align="center"><img src="images/enemy.png" alt="Enemy sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+> <p align="center"><img src="images/select-stage-tokyo.png" alt="Stage icon showing the Tokyo backdrop." width="100" height="100" style="object-fit: contain;"></p>
 >
 > ```blocks3
-> wait ((1) / (difficulty)) seconds
+> when green flag clicked
+> set [score v] to (0)
 > ```
->
-> A `difficulty`{:class="block3variables"} of `2` spawns an enemy every half second; `4` spawns one every quarter second. Just remember to set `difficulty`{:class="block3variables"} to a starting value on the green flag, or you'll be dividing by nothing.
 
-> [!HINT]
+> [!TASK]
 >
-> Want the player to choose? If you **tick** the `difficulty`{:class="block3variables"} variable, then right-click it on the stage, you can turn it into a **slider** they drag before they start.
+> On the **Stage**, add one point per second while the game is running. When the game ends, save `score`{:class="block3variables"} as the new `high score`{:class="block3variables"} if it is higher.
 >
-> ![The difficulty variable ticked in the Variables palette.](images/variable-difficulty.png)
+> ```blocks3
+> when I receive (dino v)
+> repeat until <(playing) = (0)>
+> wait (1) seconds
+> change [score v] by (1)
+> end
+> if <(score) > (high score)> then
+> set [high score v] to (score)
+> end
+> ```
 
-> [!TIP]
+> [!TASK]
 >
-> How hard a game gets, and how fast, is called its **difficulty curve**. The only way to get it right is to **play-test**: play your own game, notice when it's too easy or unfair, and adjust the numbers.
+> Open the **Backdrops** tab. Choose the day, sunset, or night version of Tokyo.
+>
+> ![The Backdrops tab, above the sprite list.](images/backdrop_tab.png)
+
+> [!TASK]
+>
+> **Optional:** On the **player** sprite, change the `game over`{:class="block3myblocks"} block so it says the final `score`{:class="block3variables"}.
+>
+> <p align="center"><img src="images/player.png" alt="Player sprite icon." width="100" height="100" style="object-fit: contain;"></p>
+
+> [!TASK]
+>
+> Save your project so you don't lose your work.
+>
+> ![Saving the project to your computer from the File menu.](images/save-locally.png)
+
+> [!SAVE]
+
+**Test:** Play a full round. Your score should climb each second, the game should end when your health runs out, and your best run should stick as the high score.

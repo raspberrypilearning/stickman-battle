@@ -9,6 +9,7 @@ steps:
     completion:
       - engaged
   - title: Add the other moves
+  - title: Add a dash roll
   - title: Return to a ready stance
   - title: Start the game
   - title: Move left and right

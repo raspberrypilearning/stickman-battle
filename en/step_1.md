@@ -1,6 +1,6 @@
 ## What you will make
 
-You'll make a side-on fighting game where a stickman hero takes on giant, city-stomping dinosaurs in the middle of Tokyo. The player moves the fighter left and right and throws punches, kicks, and sword slashes to knock the dinosaurs back — before they bite away all of the fighter's health.
+Make a side-on fighting game where a stickman hero battles giant, city-stomping dinosaurs in Tokyo.
 
 > [!NOPRINT]
 >
@@ -14,16 +14,15 @@ You'll make a side-on fighting game where a stickman hero takes on giant, city-s
 >
 > ![A stickman fighter facing a giant dinosaur in Tokyo](images/banner.png)
 
-The player controls the fighter with the keyboard:
+Move the fighter left and right, then punch, kick, or slash the dinosaurs before they bite away all the fighter's health.
 
-- `left arrow`{:class="block3sensing"} and `right arrow`{:class="block3sensing"} — walk
-- `space`{:class="block3sensing"} — punch
-- `m`{:class="block3sensing"} — kick
-- `n`{:class="block3sensing"} — sword slash
-- `v`{:class="block3sensing"} — dash roll
-- `up arrow`{:class="block3sensing"} — jump
+Use these keys:
 
-The fighter is only dangerous **mid-strike**: as a punch, kick, or slash lands, the fists, foot and weapon flash a bright colour. If the dinosaur runs into that colour it gets knocked back and destroyed. If it reaches the fighter at any other time, it bites, and the fighter loses health.
+- `left arrow`{:class="block3events"} and `right arrow`{:class="block3events"} — walk
+- `space`{:class="block3events"} — punch
+- `m`{:class="block3events"} — kick
+- `n`{:class="block3events"} — sword slash
+- `v`{:class="block3events"} — dash roll
+- `up arrow`{:class="block3events"} — jump
 
-> [!NOPRINT]
->
+During a punch, kick, or slash, the fighter's fist, foot, or weapon flashes a bright colour. A dinosaur that touches this colour is knocked back. At any other time, the dinosaur bites and the fighter loses health.
