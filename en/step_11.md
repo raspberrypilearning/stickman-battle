@@ -1,4 +1,4 @@
-## Challenge: make it harder
+## Challenge: Make it harder
 
 Add a **difficulty** setting that controls how often enemies appear.
 

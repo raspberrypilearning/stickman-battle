@@ -66,4 +66,4 @@ Add a green flag script that sets up the fighter, plays a short intro, and start
 >
 > Personalise the two `say`{:class="block3looks"} lines. Change `set size to`{:class="block3looks"} if your fighter looks too big or too small.
 
-**Test:** Click the green flag. Your fighter faces left, sizes up, delivers its lines, then settles into the idle bob.
+**Test:** Click the green flag. Your fighter should face left, size up, deliver its lines, then settle into the idle bob.

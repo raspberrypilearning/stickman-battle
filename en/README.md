@@ -1,4 +1,4 @@
-# Project Structure
+# Project structure
 
 This repository is used to build CCP projects. Below is the directory structure and a description of what each folder and file is used for.
 
@@ -24,7 +24,7 @@ en/
 └── step_3.md
 ```
 
-## Directory and File Descriptions
+## Directory and file descriptions
 
 ### `code/`
 Contains Python or HTML code used in the Raspberry Pi Code Editor.  
@@ -39,14 +39,14 @@ Contains Python or HTML code used in the Raspberry Pi Code Editor.
 
 ### `images/`
 Stores all images for the project.  
-- Must contain a `banner.png` (the project’s hero image).  
-- Edited images should be accompanied by their original versions.  
-- Additional supporting images should be sensibly named.  
+- Must contain a `banner.png` (the project’s hero image)  
+- Edited images should be accompanied by their original versions  
+- Additional supporting images should be sensibly named
 
 ### `resources/`
 Contains supporting resources for the project.  
-- Must include the PDF version of the project, clearly named.  
-- Other resources such as offline starter projects, assets, or supporting files can also go here.  
+- Must include the PDF version of the project, clearly named  
+- Other resources such as offline starter projects, assets, or supporting files can also go here  
 - Learners can download a `.zip` of this folder via:  
   `https://rpf.io/p/en/project-slug-go`
 
@@ -82,8 +82,8 @@ steps:
   - `false`: project is not publicly listed (but still accessible via slug URL)  
 - **`pdf`**: Path to a PDF in `resources/`, making it downloadable  
 - **`completion`**: Metrics for learner progress  
-  - `engaged`: Learner has reached the first "making" step  
-  - `internal`: Final "making" step of the project  
+  - `engaged`: Learner has reached the first 'making' step  
+  - `internal`: Final 'making' step of the project  
   - `external`: Last step of the project, often a challenge  
 - **Challenges**: Optional, provide extra tasks and count as `external` completion steps  
 
@@ -92,5 +92,5 @@ Documentation for the project, including the structure and explanation of conten
 
 ### `step_1.md`, `step_2.md`, `step_3.md`
 Markdown files containing step-by-step instructions for learners.  
-- Each step corresponds to a tutorial section.  
-- The number of steps varies by project.  
+- Each step corresponds to a tutorial section  
+- The number of steps varies by project  

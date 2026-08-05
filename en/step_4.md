@@ -6,7 +6,7 @@ Add a roll that animates the fighter and moves it quickly out of danger.
 >
 > On the **player** sprite, make a `roll`{:class="block3myblocks"} block. Add a sound, then switch through the five **dash_roll** costumes.
 >
-> Add `move 5 steps`{:class="block3motion"} before each costume switch so the fighter slides forward during the roll.
+> Add `move 5 steps`{:class="block3motion"} before each costume switch so that the fighter slides forwards during the roll.
 >
 > ```blocks3
 > define roll

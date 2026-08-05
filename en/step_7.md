@@ -54,7 +54,7 @@ The blocks inside `if playing = 1`{:class="block3control"} only run after the in
 > end
 > ```
 
-**Test:** Click the green flag, wait for the intro, then hold the arrow keys. Your fighter walks left and right and faces the way it's going.
+**Test:** Click the green flag, wait for the intro, then hold the arrow keys. Your fighter should walk left and right and face the way it's going.
 
 > [!TASK]
 >

@@ -108,4 +108,4 @@ Change `set size to 70%`{:class="block3looks"} if your enemy is too big or too s
 > delete this clone
 > ```
 
-**Test:** Click the green flag. After the intro, enemies appear from the left and right and close in on your fighter. They'll walk right through it for now — you'll fix that next.
+**Test:** Click the green flag. After the intro, enemies should appear from the left and right and close in on your fighter. They'll walk right through it for now — you'll fix that next.

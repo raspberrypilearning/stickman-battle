@@ -87,8 +87,8 @@ Make enemies bite the fighter, and make the fighter's strikes knock enemies away
 >
 > Inside `if touching player`{:class="block3control"}, add another `if`{:class="block3control"} choice:
 >
-> - If the clone touches the strike colour, play the knock-back sound, move it away, and delete it.
-> - Otherwise, run the bite blocks.
+> - If the clone touches the strike colour, play the knock-back sound, move it away, and delete it
+> - Otherwise, run the bite blocks
 >
 > Click the colour in `touching color?`{:class="block3sensing"}, choose the eyedropper, and pick the strike colour from the fighter on the stage.
 >

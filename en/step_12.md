@@ -1,6 +1,6 @@
-## Challenge: a two-player battle
+## Challenge: A two-player battle
 
-Turn Stickman Battle into a game for **two players**, with one fighter each.
+Turn Stickman battle into a game for **two players**, with one fighter each.
 
 > [!CHALLENGE]
 >
